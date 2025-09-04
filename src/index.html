@@ -6,10 +6,110 @@
     <title>HRMS Dashboard - Performance</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Webpack!</h1>
-      <i class="bi bi-heart-fill"></i><br>
-      <button class="btn btn-primary">Primary button</button>
+    <!-- Nav افقی -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+          <img
+            src="./assets/images/lexcropLogo.png"
+            alt="Lex Crop Logo"
+            height="30"
+          />
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Leave</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Attendance</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-primary bg-opacity-10 rounded-2 text-primary"
+                href="#"
+                >Performance</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <div class="search-box">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                class="form-control border-0"
+                placeholder="Search anything..."
+              />
+            </div>
+            <i class="bi bi-bell text-muted"></i>
+            <i class="bi bi-chat text-muted"></i>
+            <img
+              src="./assets/images/profileImage.png"
+              alt="Profile"
+              class="rounded-circle"
+              width="32"
+              height="32"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Aside عمودی -->
+        <aside
+          class="col-auto sidebar d-flex flex-column p-3 bg-white border-end"
+          style="width: 80px"
+        >
+          <nav class="nav flex-column align-items-center gap-4">
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-grid-1x2-fill fs-5"></i>
+              <div class="small">Dashboard</div>
+            </a>
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-building fs-5"></i>
+              <div class="small">Org</div>
+            </a>
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-calendar3 fs-5"></i>
+              <div class="small">Calendar</div>
+            </a>
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-p-circle fs-5"></i>
+              <div class="small">Parkings</div>
+            </a>
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-people fs-5"></i>
+              <div class="small">Recruit</div>
+            </a>
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-chat-dots fs-5"></i>
+              <div class="small">Messages</div>
+            </a>
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-question-circle fs-5"></i>
+              <div class="small">Help</div>
+            </a>
+            <a class="nav-link text-center" href="#">
+              <i class="bi bi-gear fs-5"></i>
+              <div class="small">Settings</div>
+            </a>
+          </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="col-11 content">
+          <h2>Good afternoon, Sourav!</h2>
+          <p>Your performance is looking good!</p>
+          <!-- اینجا کارت‌ها، نمودارها، و progress bar ها قرار می‌گیرند -->
+        </main>
+      </div>
     </div>
   </body>
 </html>
