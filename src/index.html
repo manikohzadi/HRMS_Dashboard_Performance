@@ -5,111 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HRMS Dashboard - Performance</title>
   </head>
-  <body>
-    <!-- Nav افقی -->
+  <body class="min-vh-100">
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm"
     >
       <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="#">
           <img
-            src="./assets/images/lexcropLogo.png"
-            alt="Lex Crop Logo"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd52d3a7-16d5-4ae5-a900-2ddb238ff7fb/dbdw9m6-3478b3b8-5fee-403d-9eab-c1ebd3097963.png/v1/fill/w_1600,h_1600/injustice_lex_luthor_symbol_by_deathcantrell_dbdw9m6-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcL2ZkNTJkM2E3LTE2ZDUtNGFlNS1hOTAwLTJkZGIyMzhmZjdmYlwvZGJkdzltNi0zNDc4YjNiOC01ZmVlLTQwM2QtOWVhYi1jMWViZDMwOTc5NjMucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.u419DffcWbVxcOn_PWZXdXp3Glg7czLEB2RWhzWhpdo"
+            alt="LexCorp Logo"
             height="30"
           />
         </a>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto mb-2">
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
+              <a class="nav-link px-3" href="#">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Leave</a>
+              <a class="nav-link px-3" href="#">Leave</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Attendance</a>
+              <a class="nav-link px-3" href="#">Attendance</a>
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active bg-primary bg-opacity-10 rounded-2 text-primary"
+                class="nav-link active px-3 bg-primary bg-opacity-10 rounded-2 text-primary"
                 href="#"
                 >Performance</a
               >
             </li>
           </ul>
-          <div class="d-flex align-items-center gap-3">
-            <div class="search-box">
-              <i class="bi bi-search"></i>
+
+          <div class="d-flex align-items-center gap-4">
+            <div class="position-relative d-none d-lg-block">
+              <i
+                class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"
+              ></i>
               <input
                 type="search"
-                class="form-control border-0"
+                class="form-control bg-light border-0 ps-5"
                 placeholder="Search anything..."
               />
             </div>
-            <i class="bi bi-bell text-muted"></i>
-            <i class="bi bi-chat text-muted"></i>
-            <img
-              src="./assets/images/profileImage.png"
-              alt="Profile"
-              class="rounded-circle"
-              width="32"
-              height="32"
-            />
+
+            <div class="d-flex align-items-center gap-3">
+              <button class="btn btn-link text-muted position-relative p-0">
+                <i class="bi bi-bell fs-5"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  2
+                </span>
+              </button>
+              <button class="btn btn-link text-muted p-0">
+                <i class="bi bi-chat fs-5"></i>
+              </button>
+              <img
+                src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+                alt="Profile"
+                class="rounded-circle"
+                width="40"
+                height="40"
+              />
+            </div>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Aside عمودی -->
-        <aside
-          class="col-auto sidebar d-flex flex-column p-3 bg-white border-end"
-          style="width: 80px"
-        >
-          <nav class="nav flex-column align-items-center gap-4">
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-grid-1x2-fill fs-5"></i>
-              <div class="small">Dashboard</div>
-            </a>
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-building fs-5"></i>
-              <div class="small">Org</div>
-            </a>
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-calendar3 fs-5"></i>
-              <div class="small">Calendar</div>
-            </a>
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-p-circle fs-5"></i>
-              <div class="small">Parkings</div>
-            </a>
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-people fs-5"></i>
-              <div class="small">Recruit</div>
-            </a>
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-chat-dots fs-5"></i>
-              <div class="small">Messages</div>
-            </a>
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-question-circle fs-5"></i>
-              <div class="small">Help</div>
-            </a>
-            <a class="nav-link text-center" href="#">
-              <i class="bi bi-gear fs-5"></i>
-              <div class="small">Settings</div>
-            </a>
-          </nav>
-        </aside>
+    <div class="d-flex min-vh-100 pt-0 mt-0">
+      <aside class="bg-white border-end w-auto">
+        <nav class="nav flex-column h-100 py-3">
+          <a class="nav-link text-center py-3 text-secondary" href="#">
+            <i class="bi bi-grid-1x2-fill d-block fs-5 mb-1"></i>
+            <small>Dashboard</small>
+          </a>
+          <a class="nav-link text-center py-3 text-secondary" href="#">
+            <i class="bi bi-building d-block fs-5 mb-1"></i>
+            <small>Org</small>
+          </a>
+          <a
+            class="nav-link text-center py-3 active rounded-2 bg-primary bg-opacity-10 text-primary mx-2"
+            href="#"
+          >
+            <i class="bi bi-calendar3 d-block fs-5 mb-1"></i>
+            <small>Calendar</small>
+          </a>
+          <a class="nav-link text-center py-3 text-secondary" href="#">
+            <i class="bi bi-truck d-block fs-5 mb-1"></i>
+            <small>Parkings</small>
+          </a>
+          <a class="nav-link text-center py-3 text-secondary" href="#">
+            <i class="bi bi-people d-block fs-5 mb-1"></i>
+            <small>Recruit</small>
+          </a>
+          <a class="nav-link text-center py-3 text-secondary" href="#">
+            <i class="bi bi-chat-dots d-block fs-5 mb-1"></i>
+            <small>Messages</small>
+          </a>
 
-        <!-- Main content -->
-        <main class="col-11 content">
-          <h2>Good afternoon, Sourav!</h2>
-          <p>Your performance is looking good!</p>
-          <!-- اینجا کارت‌ها، نمودارها، و progress bar ها قرار می‌گیرند -->
-        </main>
-      </div>
+          <div class="mt-auto">
+            <a class="nav-link text-center py-3 text-secondary" href="#">
+              <i class="bi bi-question-circle d-block fs-5 mb-1"></i>
+              <small>Help</small>
+            </a>
+            <a class="nav-link text-center py-3 text-secondary" href="#">
+              <i class="bi bi-gear d-block fs-5 mb-1"></i>
+              <small>Settings</small>
+            </a>
+          </div>
+        </nav>
+      </aside>
+
+      <main class="flex-grow-1 p-4 bg-light">
+        <div class="mb-4">
+          <h1 class="h3 mb-2">Good afternoon, Sourav!</h1>
+          <p class="text-muted mb-0">Your performance is looking good!</p>
+        </div>
+
+        <div class="row g-4"></div>
+      </main>
     </div>
   </body>
 </html>
